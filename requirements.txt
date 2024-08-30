@@ -1,0 +1,13 @@
+python-dotenv
+requests
+webdriver-manager
+selenium
+google-generativeai
+SQLAlchemy
+Django
+djangorestframework
+sqlalchemy_paginator
+oauthlib
+pusher
+regex
+python-gitlab
