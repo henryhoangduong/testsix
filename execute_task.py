@@ -13,7 +13,7 @@ from helpers.gitlab_client.gitlab_client import GitlabClient
 from helpers.parameter_loader.parameter_loader import load_parameters
 load_dotenv()
 
-print('start: ', datetime.now())
+start =datetime.now()
 arg = sys.argv
 
 param = arg[1]
@@ -99,4 +99,5 @@ with tempfile.TemporaryDirectory(dir="scripts") as tmpdirname:
     logger.info(f"Executing task={script_basename} for task_id={task_id}")
     # call the task module run function
     task.run(**param_payload)
+    print('start: ',start)
     print('end: ', datetime.now())
